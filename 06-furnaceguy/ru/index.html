@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ru"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NEP Servis — Haier &amp; Daikin в Азербайджане | Баку</title><meta name="description" content="NEP Servis: поставка, монтаж, пусконаладка и сервис оборудования Haier и Daikin в Баку. MRV, VRV, чиллеры и сплит-системы. Собственный склад запчастей.">
 <link rel="alternate" hreflang="az" href="../index.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,9 @@ header.top .brand{text-align:center;text-decoration:none;color:var(--navy);paddi
 header.top .brand b{display:block;font:700 48px/1.2 'PT Serif',Georgia,serif;letter-spacing:.5px;text-transform:uppercase}
 header.top .brand span{display:block;font:400 30px/1.3 'PT Serif',Georgia,serif;text-transform:uppercase;margin-top:4px}
 header.top nav{display:flex;gap:30px;padding-right:48px;align-items:center}
-header.top nav a{color:#fff;font-size:15px;text-decoration:none;font-weight:600}
-header.top nav a:hover,header.top nav a[aria-current]{text-decoration:underline}
+header.top nav a{color:#fff;font-size:15px;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px;transition:text-decoration-color .08s linear;font-weight:600}
+header.top nav a:hover,header.top nav a:focus-visible,header.top nav a[aria-current]{text-decoration-color:#fff}
+@media(prefers-reduced-motion:reduce){header.top nav a{transition:none}}
 .lang{display:flex;gap:8px;color:#fff;font-size:15px}
 .ph{position:relative;background:linear-gradient(135deg,#c9d4e3,#e8eef6);display:grid;place-items:center;color:#5b6f8e;font:600 15px Cabin,'Open Sans',sans-serif;text-transform:uppercase;letter-spacing:1px;text-align:center;overflow:hidden}
 .ph::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,transparent 55%,rgba(42,65,102,.12))}
@@ -28,11 +29,6 @@ header.top nav a:hover,header.top nav a[aria-current]{text-decoration:underline}
 .strip .mid{width:600px;max-width:100%;justify-self:center;position:relative}
 .pic{display:block;width:100%;height:100%;object-fit:cover}
 .strip .pic{height:100%}
-.strip .mid .pic{position:absolute;inset:0;opacity:0;animation:fade 15s infinite}
-.strip .mid .pic:nth-child(1){opacity:1;animation-name:fade1}
-.strip .mid .pic:nth-child(2){animation-delay:5s}.strip .mid .pic:nth-child(3){animation-delay:10s}
-@keyframes fade{0%{opacity:0}6%{opacity:1}33%{opacity:1}40%{opacity:0}100%{opacity:0}}
-@keyframes fade1{0%{opacity:1}33%{opacity:1}40%{opacity:0}93%{opacity:0}100%{opacity:1}}
 .hero{min-height:651px;position:relative;display:grid;place-items:center;text-align:center;padding:60px 24px;overflow:hidden;background:#d9dadc}
 .hero>.bg{position:absolute;inset:-12px;width:calc(100% + 24px);height:calc(100% + 24px);object-fit:cover;filter:blur(6px) saturate(.7);transform:scale(1.02)}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,255,255,.72),rgba(255,255,255,.55) 45%,rgba(255,255,255,.25))}
@@ -42,7 +38,6 @@ header.top nav a:hover,header.top nav a[aria-current]{text-decoration:underline}
 .hero h1 em{font-style:normal}
 .hero p{font-size:22px;margin:30px auto 0;max-width:760px;font-weight:600}
 .pill{display:inline-block;background:var(--grey);color:#fff;border:0;border-radius:320px;padding:14px 50px;font:600 13px Cabin,'Open Sans',sans-serif;text-transform:uppercase;box-shadow:0 2px 1px rgba(0,0,0,.25);text-decoration:none;cursor:pointer;margin-top:34px}
-.pill:hover{background:#2e2e2e}
 .slab{display:block;background:var(--grey);color:#fff;font:400 16px 'PT Serif',Georgia,serif;text-align:center;padding:20px 30px;text-decoration:none;width:375px;max-width:100%;margin:0 auto 16px}
 section.s{padding:70px 24px}
 .in1{max-width:1040px;margin:0 auto}
@@ -85,7 +80,7 @@ details{border-bottom:1px solid #cfd7e3;padding:16px 0}summary{font:700 22px Cab
 .plate{background:#fff;width:600px;max-width:100%;margin:30px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px}.plate .pic{aspect-ratio:1/1;height:auto}
 footer{background:var(--navy);color:#fff;font-weight:700;font-size:16px;padding:50px 24px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
 footer a{text-decoration:none}
-.rv{opacity:0;transition:opacity .8s}.rv.in{opacity:1}
+
 @media(max-width:900px){
  header.top{grid-template-columns:1fr;padding:16px 0 20px}header.top .corner{display:none}
  header.top .brand b{font-size:32px}header.top .brand span{font-size:20px}
@@ -96,17 +91,17 @@ footer a{text-decoration:none}
  .cta h2{font-size:28px}footer{grid-template-columns:1fr}
  .hero h1{font-size:32px}table{font-size:14px;display:block;overflow-x:auto}th,td{padding:8px 6px}
 }
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transition:none}.strip .mid .pic{animation:none}.strip .mid .pic:nth-child(n+2){display:none}}
-</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"NEP Servis","telephone":"+994503308916","email":"info@nep-servis.az","address":{"@type":"PostalAddress","addressLocality":"Баку","addressCountry":"AZ"}}</script></head><body>
+
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"NEP Servis","telephone":"+994503308916","email":"info@nepservis.az","address":{"@type":"PostalAddress","addressLocality":"Баку","addressCountry":"AZ"}}</script></head><body>
 <a class="skip" href="#main">К содержимому</a>
 <header class="top">
   <div class="corner"><img class="pic" src="../media/corner.jpg" srcset="../media/corner-sm.jpg 403w, ../media/corner.jpg 806w" sizes="(max-width:900px) 100vw, 403px" width="403" height="235" alt="Фото объекта" decoding="async"></div>
   <a class="brand" href="#" aria-label="NEP Servis — на главную"><b>NEP Servis</b><span>Авторизованный сервисно-инженерный центр</span></a>
   <nav aria-label="Разделы"><a href="#service">Услуги</a><a href="#catalog">Каталог</a><a href="#objects">Объекты</a><a href="#parts">Склад</a><a href="#contact">Контакты</a><span class="lang" aria-label="Выбор языка"><a href="../index.html">AZ</a> | <a href="index.html" aria-current="page">RU</a></span></nav>
 </header>
-<div class="strip" aria-hidden="true"><img class="pic" src="../media/strip-left.jpg" srcset="../media/strip-left-sm.jpg 397w, ../media/strip-left.jpg 794w" sizes="(max-width:900px) 100vw, 397px" width="397" height="324" alt="" loading="lazy" decoding="async"><div class="mid"><img class="pic" src="../media/strip-center.jpg" srcset="../media/strip-center-sm.jpg 600w, ../media/strip-center.jpg 1200w" sizes="(max-width:900px) 100vw, 600px" width="600" height="324" alt="" decoding="async"><img class="pic" src="../media/strip-center-2.jpg" srcset="../media/strip-center-2-sm.jpg 600w, ../media/strip-center-2.jpg 1200w" sizes="(max-width:900px) 100vw, 600px" width="600" height="324" alt="" loading="lazy" decoding="async"><img class="pic" src="../media/strip-center-3.jpg" srcset="../media/strip-center-3-sm.jpg 600w, ../media/strip-center-3.jpg 1200w" sizes="(max-width:900px) 100vw, 600px" width="600" height="324" alt="" loading="lazy" decoding="async"></div><img class="pic" src="../media/strip-right.jpg" srcset="../media/strip-right-sm.jpg 391w, ../media/strip-right.jpg 782w" sizes="(max-width:900px) 100vw, 391px" width="391" height="324" alt="" loading="lazy" decoding="async"></div>
+<div class="strip" aria-hidden="true"><img class="pic" src="../media/strip-left.jpg" srcset="../media/strip-left-sm.jpg 397w, ../media/strip-left.jpg 794w" sizes="(max-width:900px) 100vw, 397px" width="397" height="324" alt="" loading="lazy" decoding="async"><div class="mid"><img class="pic" src="../media/strip-center.jpg" srcset="../media/strip-center-sm.jpg 600w, ../media/strip-center.jpg 1200w" sizes="(max-width:900px) 100vw, 600px" width="600" height="324" alt="" decoding="async"></div><img class="pic" src="../media/strip-right.jpg" srcset="../media/strip-right-sm.jpg 391w, ../media/strip-right.jpg 782w" sizes="(max-width:900px) 100vw, 391px" width="391" height="324" alt="" loading="lazy" decoding="async"></div>
 <main id="main">
-<section class="hero"><img class="bg" src="../media/hero.jpg" srcset="../media/hero-sm.jpg 960w, ../media/hero.jpg 1920w" sizes="100vw" alt="" fetchpriority="high"><div><h1>Профессиональные климатические и холодильные системы <em>Haier &amp; Daikin</em> в Азербайджане</h1><p>Поставка, монтаж, пусконаладка и сервис MRV-систем, чиллеров и сплит-систем. Собственный склад запчастей в Баку.</p><a class="pill" href="#contact">Запросить консультацию ►</a></div></section>
+<section class="hero"><img class="bg" src="../media/hero.jpg" srcset="../media/hero-sm.jpg 960w, ../media/hero.jpg 1920w" sizes="100vw" alt="" fetchpriority="high"><div><h1>Профессиональные климатические и холодильные системы <em><span lang="en">Haier</span> &amp; <span lang="en">Daikin</span></em> в Азербайджане</h1><p>Поставка, монтаж, пусконаладка и сервис MRV-систем, чиллеров и сплит-систем. Собственный склад запчастей в Баку.</p><a class="pill" href="#contact">Запросить консультацию ►</a></div></section>
 <section class="s c rv" id="service"><div class="in1"><h2>Мы гарантируем надёжную работу на весь срок службы.</h2><p class="lead">Мы не просто продаём климатическую технику — мы гарантируем её надёжную работу на протяжении всего срока службы.</p>
 <div class="three"><div class="rv"><img class="pic" src="../media/trust-install.jpg" srcset="../media/trust-install-sm.jpg 333w, ../media/trust-install.jpg 666w" sizes="(max-width:900px) 100vw, 333px" width="333" height="427" alt="Пусконаладка" loading="lazy" decoding="async"><p class="cap">20+ лет</p><p class="small">опыта работы с Haier и Daikin в регионе</p></div><div class="rv"><img class="pic" src="../media/trust-diag.jpg" srcset="../media/trust-diag-sm.jpg 333w, ../media/trust-diag.jpg 666w" sizes="(max-width:900px) 100vw, 333px" width="333" height="427" alt="Комплексная диагностика электронных плат, автоматики и холодильных контуров" loading="lazy" decoding="async"><p class="cap">Инженерная служба</p><p class="small">Собственная инженерно-сервисная служба и диагностика</p></div><div class="rv"><img class="pic" src="../media/trust-store.jpg" srcset="../media/trust-store-sm.jpg 333w, ../media/trust-store.jpg 666w" sizes="(max-width:900px) 100vw, 333px" width="333" height="427" alt="Склад в Баку" loading="lazy" decoding="async"><p class="cap">Склад в Баку</p><p class="small">Склад оборудования и оригинальных запчастей в Баку</p></div></div></div></section>
 <div class="navyband"><div class="band"><p>Пусконаладка MRV, VRV и чиллеров<br>Комплексная диагностика электронных плат, автоматики и холодильных контуров<br>Ремонт и устранение ошибок стороннего монтажа<br>Договорное техническое обслуживание</p><a class="pill" href="#contact" style="margin:0">Вызвать инженера</a></div></div>
@@ -134,11 +129,11 @@ footer a{text-decoration:none}
   <p class="note">Заявка отправляется через WhatsApp.</p>
   <p class="consent">Мы собираем только имя, телефон и данные заявки — чтобы связаться с вами. Данные передаются через WhatsApp. [Черновик — проверить юристу.]</p>
 </form>
-<p class="meta">Адрес: Баку, Азербайджан · Часы работы: Пн–Сб 09:00–19:00 · E-mail: <a href="mailto:info@nep-servis.az">info@nep-servis.az</a></p>
+<p class="meta">Адрес: г. Баку, Насиминский район, проспект Азадлыг 120 · Часы работы: Пн–Сб 09:00–19:00, Вс — выходной · E-mail: <a href="mailto:info@nepservis.az">info@nepservis.az</a></p>
 <h2 style="font-size:34px;margin-top:40px">Haier &amp; Daikin</h2>
 <div class="plate"><img class="pic" src="../media/plate-1.jpg" srcset="../media/plate-1-sm.jpg 300w, ../media/plate-1.jpg 600w" sizes="(max-width:900px) 100vw, 300px" width="300" height="300" alt="Haier &amp; Daikin" loading="lazy" decoding="async"><img class="pic" src="../media/plate-2.jpg" srcset="../media/plate-2-sm.jpg 300w, ../media/plate-2.jpg 600w" sizes="(max-width:900px) 100vw, 300px" width="300" height="300" alt="Haier &amp; Daikin" loading="lazy" decoding="async"><img class="pic" src="../media/plate-3.jpg" srcset="../media/plate-3-sm.jpg 300w, ../media/plate-3.jpg 600w" sizes="(max-width:900px) 100vw, 300px" width="300" height="300" alt="Haier &amp; Daikin" loading="lazy" decoding="async"><img class="pic" src="../media/plate-4.jpg" srcset="../media/plate-4-sm.jpg 300w, ../media/plate-4.jpg 600w" sizes="(max-width:900px) 100vw, 300px" width="300" height="300" alt="Haier &amp; Daikin" loading="lazy" decoding="async"></div></div></section>
 </main>
-<footer><span>© NEP Servis · Баку</span><a href="mailto:info@nep-servis.az">info@nep-servis.az</a><span>Баку, Азербайджан</span></footer>
+<footer><span>© NEP Servis · Баку</span><a href="mailto:info@nepservis.az">info@nepservis.az</a><span>г. Баку, Насиминский район, проспект Азадлыг 120</span></footer>
 <script>
 document.querySelectorAll('.wa-form').forEach(function(form){
   form.addEventListener('submit',function(e){

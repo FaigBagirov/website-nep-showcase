@@ -108,6 +108,17 @@ footer .bot{border-top:1px solid #2a2a2a;margin-top:40px;padding:22px 0;font-siz
 @media(max-width:1000px){.sub{position:static;display:flex;background:none;border:0;box-shadow:none;padding:0 0 0 14px}nav.main{display:none;position:absolute;top:80px;left:0;right:0;background:#0f1928;flex-direction:column;padding:20px;gap:14px}nav.main.open{display:flex}.menu-btn{display:block}.hdr-r .pill-o.cl{display:none}.grid3,.cards4{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.hero{min-height:720px;padding:120px 16px 160px}.hero h1{font-size:34px}.hero p{font-size:17px}.btn.sky{font-size:15px;padding:16px 24px}.trust ul,.grid3,.cards4,.objs{grid-template-columns:1fr}.hdr-r>.btn,.hdr-r>.pill-o{display:none}.logo{font-size:18px}.sec h2.dk,.band h2,.contact h2{font-size:28px}footer .cols{grid-template-columns:1fr}.hero>.curve{height:70px}.hero>.notch{display:none}.sec{padding:48px 0}.sec-navy{padding:44px 0 56px}header.top .wrap{gap:12px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* пропорции по замерам образца (1440/1920), только широкий экран */
+@media(min-width:1101px){
+header.top{background:rgba(0,0,0,.3)}
+.wrap{padding:0}@media(max-width:1300px){.wrap{padding:0 20px}}
+.hero{min-height:calc(100vh - 80px);align-items:flex-start;padding:max(80px,calc(176px + (100vh - 900px)*.5)) 20px 0}
+.hero>div{max-width:749px}
+.btn{padding:12px 24px;line-height:20px}.btn.sky{padding:16px 32px;line-height:28px}.hero .two .btn{padding:16px 32px;line-height:28px}
+.sec-navy h2{line-height:1.2}.band h2,.sec h2{line-height:1.25}
+.trust{padding:30px 0 31px}
+.sec,.sec-navy{padding-top:64px;padding-bottom:64px}
+}
 </style></head><body>
 <a class="skip" href="#main">К содержимому</a>
 <header class="top"><div class="wrap"><a class="logo" href="#" aria-label="NEP Servis — на главную"><span>NEP Servis<small><span lang="en">Haier</span> · <span lang="en">Daikin</span></small></span></a>

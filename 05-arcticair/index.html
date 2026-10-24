@@ -86,6 +86,23 @@ footer .bot{margin-top:36px;border-top:1px solid rgba(255,255,255,.25);padding:2
 @media(max-width:1100px){header.top{grid-template-columns:1fr auto;height:auto;padding:10px 16px}nav.main{display:none;grid-column:1/-1;padding:10px 0}nav.main.open{display:flex}.hdr-r{padding-top:0;flex-direction:row;align-items:center}.hdr-r .bn{display:none}.menu-btn{display:block;color:var(--navy)}.cols2,.bk{grid-template-columns:1fr}.cards,.rvg,.tips{grid-template-columns:repeat(2,1fr)}footer .fg{grid-template-columns:1fr 1fr}.hero{margin-top:0;padding-top:0}.hero .in{padding-top:70px}}
 @media(max-width:640px){.w{padding:0 16px}.srv{margin:0 10px;padding:40px 14px}.hero{min-height:700px}.hero h1{font-size:34px}.hero p{font-size:18px}.bn.big{min-width:100%}.hero .row{flex-direction:column;align-items:stretch;padding:0 6px}.cards,.rvg,.tips,.checks,footer .fg{grid-template-columns:1fr}.tilt{flex-direction:column}.tilt .ph{margin:0!important;aspect-ratio:4/3}h2.sh{font-size:26px}.strip{font-size:14px;padding:0 12px}.sec{padding:50px 0}.logo b{font-size:26px}.award{width:180px;min-height:200px;border-radius:90px;font-size:18px}.polar{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+/* пропорции по замерам образца (1440/1920), только широкий экран */
+@media(min-width:1101px){
+.strip{position:relative;z-index:31}
+header.top{background:transparent;position:relative;z-index:30}
+nav.main a,.logo small,.logo i,.lang,.lang a,.lang b{color:#fff;text-shadow:0 1px 5px rgba(0,0,0,.8)}
+nav.main a:hover,nav.main a.cur{border-color:#fff;color:#fff}
+.w{max-width:none}
+.hero{margin-top:-182px;padding-top:182px;min-height:100vh}
+.hero .in{padding-top:max(40px,calc(123px + (100vh - 900px)*.661))}
+.srv>*{max-width:calc(1264px + (100vw - 1440px)*.148);margin-left:auto;margin-right:auto}
+.cards{max-width:calc(1200px + (100vw - 1440px)*.146);margin-left:auto;margin-right:auto}
+.ck h3{font-size:24px}
+.cards{gap:76px}
+.hero p{font-size:18px;line-height:27px;max-width:900px;margin:24px auto 24px}
+.bn{font-size:16px;padding:10px 17px;min-height:55px;min-width:249px}.bn.big{min-width:249px;padding:10px 17px}
+.hdr-r{padding-top:29px}
+}
 </style></head><body>
 <a class="skip" href="#main">Məzmuna keç</a>
 <div class="strip"><span><b>20+</b> il <span class="st">★★★★★</span> <span style="opacity:.7">[nümunə]</span></span><span>&#9679; Bakı</span></div>

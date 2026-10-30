@@ -209,7 +209,7 @@ h1{font-size:clamp(26px,min(4.2vw,6.4vh),calc(var(--u)*3.5));max-width:760px}
  .card{min-height:620px}.art{height:52%}.card .unit{scale:1.35;margin-top:20px}
  .hero:before,.hero:after{width:120%;height:46%}
  .cards3,.stats,.dg,.diff,.tst{grid-template-columns:1fr}.dk .top{flex-direction:column;align-items:flex-start}
- .diff .t{padding:60px 0}.diff .ph{min-height:260px}.s{padding:60px 0}.impact{padding:80px 0}.globe{width:130vw;left:-15%;top:30px;transform:none}
+ .diff .t{padding:60px 0}.diff .ph{min-height:260px}.s{padding:60px 0}.impact{padding:80px 0}.globe{width:130vw;left:-15%;top:80px;transform:none}.impact .p{margin-top:205px!important}
  .ft .g{grid-template-columns:1fr;border:0}.ft .a{border-right:0}.ft .cl{grid-template-columns:1fr 1fr;padding:30px 20px}.ft .bt{grid-column:1;padding:30px 20px}.cp{padding:20px}
  .tab{height:auto;min-height:140px;padding:24px 0}
 }
@@ -378,13 +378,14 @@ var cs=document.querySelector('.cs');
   gr.addColorStop(0, 'rgba(235,255,242,.95)'); gr.addColorStop(.2, 'rgba(120,225,160,.55)'); gr.addColorStop(.55, 'rgba(0,152,70,.18)'); gr.addColorStop(1, 'rgba(0,152,70,0)'); sx.fillStyle = gr; sx.fillRect(0, 0, 64, 64);
   function size() {
     DPR = Math.min(window.devicePixelRatio || 1, 2); L0 = Math.min(Math.round(box.clientWidth), 1000); cv.width = cv.height = Math.round(L0 * DPR);
-    F = L0 * (mob ? .86 : 1.08); OY = L0 * (mob ? .46 : .43);
+    var wk = Math.max(0, Math.min(1, (innerWidth - 1440) / 480)); /* на широких окнах плашки ниже относительно блока — карту поднимаем и чуть уменьшаем */
+    F = L0 * (mob ? 1.04 : .96 - .08 * wk); OY = L0 * (mob ? .5 : .31 - .09 * wk); /* масштаб и высота карты в блоке: правка 31.10 — вся страна над плашками, на мобильной крупнее */
     vig = ctx.createRadialGradient(L0 / 2, L0 / 2, L0 * .42, L0 / 2, L0 / 2, L0 * .5); vig.addColorStop(0, 'rgba(0,0,0,0)'); vig.addColorStop(1, 'rgba(0,0,0,1)');
   }
   var yaw = 0, pitch = 0, cx = 8, cy = 0, cY = 1, sY = 0, cP, sP, half, S;
   function cam(t) {
-    if (rm) { yaw = -8 * RAD; pitch = 51 * RAD; return; }
-    var kk = 2 * Math.PI * t / T; yaw = (-6 + 18 * Math.sin(kk) + 4 * Math.sin(kk * 2.7 + 1)) * RAD; pitch = (51 + 3 * Math.sin(kk * 3.1 + .4)) * RAD;
+    if (rm) { yaw = -8 * RAD; pitch = (mob ? 68 : 51) * RAD; return; }
+    var kk = 2 * Math.PI * t / T; yaw = (-6 + 18 * Math.sin(kk) + 4 * Math.sin(kk * 2.7 + 1)) * RAD; pitch = ((mob ? 68 : 51) + 3 * Math.sin(kk * 3.1 + .4)) * RAD;
   }
   var X, Y;
   function proj(px, py, z) { var dx = px - cx, dy = py - cy, u = dx * cY + dy * sY, v = -dx * sY + dy * cY; S = F / (DIST + v * sP - z * cP); X = half + u * S; Y = OY - (v * cP + z * sP) * S; }

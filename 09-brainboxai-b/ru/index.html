@@ -314,74 +314,139 @@ function fit(){if(innerWidth<=980){art.style.cssText='';un.style.zoom='';return}
 art.style.top=t+'px';art.style.height=h+'px';art.style.bottom='auto';un.style.zoom=Math.max(1,Math.min(h*.84/132,c.width*.62/96)).toFixed(3)}
 fit();setTimeout(fit,300);setTimeout(fit,1200);addEventListener("resize",fit);addEventListener('load',fit);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);if(window.ResizeObserver)new ResizeObserver(fit).observe(cd)})();
 var cs=document.querySelector('.cs');
-</script><script>window.AZMAP={"shape":{"w":210,"h":156,"step":2.5,"lonC":47.75,"latC":40.15,"kx":85.088,"ky":110.57,"x0":-254.05,"y1":194.98,"cells":13507,"bits":"AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAnAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAwP8fAAAAAAAAAAwAAAAAAAAAAAAAAAAAAACA/38AAAAAAAAAeAAAAAAAAAAAAAAAAAAAAID//wEAAAAAAADwAwAAAAAAAAAAAAAAAAAAwP//HwAAAAAAAMAPAAAAAAAAAAAAAAAAAAAA//9/AQAAAAAAgH8AAAAAAAAAAAAAAAAAAAD8//8PAAAAAAAA/wMAAAAAAAAAAAAAAAAAAOD//z8AAAAAAAD+HwAAAAAAAAAAAAAAAAAAgP///wEAAAAAAPx/AAAAAAAAAAAAAAAAAAAA/v//DwAAAAAA8P8DAAAAAAAAAAAAAAAAAACQ+/8/AAAAAADA/x8AAAAAAAAAAAAAAAAAAAD8//8IAAAAAID//wAAAAAAAAAAAAAAAAAAAPz//ScAAAAAwP//BwAAAAAAAAAAAAAAAAAA4P///wEAAACA//8fAAAAAAAAAAAAAAAAAACA////DwAAAAD///8AAAAAAAAAAAAAAAAAAAD8//8/AAAA8P///wcAAAAAAAAAAAAAAAAAAKD///8BAADA////PwAAAAAAAAAAAACeAAAAAP7/7wcAAAD/////AAAAAAAAAAAAAPwHAAAA4P//PwAAAP////8HAAAAAAAAAAAA/H8AAAAA/v//AAAA/P///z8AAAAAAAAAAAD4/wMAAADg//8HAADw/////wAAAAAAAAAAAPD/fwEAAAD//x8AAMD/////BwAAAAAAAAAAwP//BwAAAPD/fwAAgP////8fAAAAAAAAAADA/v8PAAAAwP//AwAA//////8AAAAAAAAAAIDv/z8AAAAA//8/AAD+/////wMAAAAAAAAAAP7//wEAAAD8//8LAPj/////DwAAAAAAAAAA8P//DwAAAPD//38A4P////9fAAAAAAAAAADA//9/AAAA4P///6HA//////8BAAAAAAAAAAD///8fAADA//3//+f//////wcAAAAAAAAAAOD////eDwD+////////////HwAAAAAAAAAAAP7///9/APz///////////9/AAAAAAAAAAAA+P////8D8P////////////8DAAAAAAAAAAD+/////x/I/////////////w8AAAAAAAAAgPn///7///P/////////////PwAAAAAAAAAAvv//////7//////+////////AQAAAAAAAAAQ+P9/////+f/////9//////8HAAAAAAAAAABA5//////j/////////////x8AAAAAAAAAAMDA/3/6/w/9+//////f/////wAAAAAAAAAAAAD//4//f8D/////////////BwAAAAAAAAAAAPD+/+D/Afz///////////8/AAAAAAAAAAAAwP//TvwDwP////////////8BAAAAAAAAAAAA/P////0D/v///////////w8AAAAAAAAAAADA/////3/g////////////fwAAAAAAAAAAAAD+/////wf+////////////AwAAAAAAAAAAAPz/////f+D///////////8fAAAAAAAAAAAA8P//////A/////////////8DAAAAAAAAAADg////////9////////////x8AAAAAAAAAAMD/////////////////////PwAAAAAAAAAAwP//////////////////////AAAAAAAAAADA////////3/////////////8DAAAAAAAAAAD////////v/////////////w8AAAAAAAAAAP7/////////////////////PwAAAAAAAAAAfP7/////////////////////AAAAAAAAAADg+P////////////////////8HAAAAAAAAAID3//////////////////////8BAAAAAAAAAPj//////////////////////w8gAQAAAAAA4P////////////////////////kHAAAAAACA//////////f//////////////x8AAAAAAAD+/////////////////////////wEAAAAAAPj//////////////////////7f/PwAAAAAAgP//////////////////////n///DAAAAAAA/P////////7/////////////3/8nAAAAAADg//////////+//////////////z8BAAAAAAD+///////b/////////////////wEAAAAAAPD/////////////////////////DwAAAAAAAP/////////+////////////F78/AAAAAAAA8P////////////////////9/GOAAAAAAAAAA//////+//+///////////88BAAYEAAAAAADQ/////////f//////////PwAAAAAAAAAAAAD+//////////////////9/AABAAAAAAAAAAPj///////////////////8AAAABAAAAAAAA4P///////////////////wAAAAAAAAAAAACA////////////////////AAAAAAAAAAAAAAD+/3////////////////8BAAAAAAAAAAAAAPj//////////////////wMAAAAAAAAAAAAA4P/////////77///////DwAAAAAAAAAAAADA//////////f////v//9/AAAAAAAAAAAAAID///////////f7/////38AAAAAAAAAAAAAAP7/////////////3////wAAAAAAAAAAAAAA/P////v//////3//////BwAAAAAAAAAAAKDw////////f//3X/////8fAAAAAAAAAAAAcO//////////6/////////8BAAAAAAAAAACA/////////////////////wMAAAAAAAAAAADw////////////////////AwAAAAAAAAAAAAD+//////////7//f////8PAAAAAAAAAAAAAPj////////////////v/z8AAAAAAAAAAAAA4P/////////////////v/wEAAAAAAAAAAAAA////////////3///7/3/BwAAAAAAAAAAAAD8//////////////////8PAAAAAAAAAAAAAOD////////////f////3z8AAAAAAAAAAAAAAP7/////////////////fwAAAAAAAABgAAAAwP//////////v///////AQAAAAAAAMADAAAA//////////////////8PAAAAAAAAnB8AAAD4/////////9/7/////z8AAAAAAAD8fwAAAMD/////////////7////wAAAAAAAOB/AwAAAP//////////+f//////AQAAAAAAgP8PAAAA8P///////3/B//////8DAAAAAAAA/D8AAAAA////////fwD+/////wcAAAAAAADw/wAAAAA8/P//////APD/////HwAAAAAAAAD+MwAYABDw//////8BgP/9//9/AAAAAAAAAPj/AfABAAD4/////wEA/P//f/8AAAAAAAAA4P8P+A8AAMD/////AQDg///+/wMAAAAAAACA///wPwAAwP////8DAAD/////DwAAAAAAAAD8/+f/AACA/////wMAAPz///8fAAAAAAAAAPD///8DAAD8////AwAA4P////8AAAAAAAAAwP///x8AAPz///8BAAAA///3/gMAAAAAAAAA/v//PwAA/P///wcAAAD4////HwAAAAAAAADw//9/AAD4////DwAAAMD/v/93AAAAAAAAAID///8BAMD///8fAAAAAP////sFAAAAAAAAAPz//wcAAP///38AAAAA/P///z0AAAAAAAAA4P///wAA+P//fwAAAAD8////ZwAAAAAAAAAA////BwAA////AAAAAP7///8fAwAAAAAAAAD8//9/AAD8/38AAAAA/P///z8IAAAAAAAAAOC///8DAPD//wAAAAD4//9//gAAAAAAAAAAgP///w8AgP//AQAAAOD////5AwAAAAAAAAAA/v//PwAA+P8DAAAAgP///0cOAAAAAAAAAADg////AADw/w8AAAAA/v//RzwAAAAAAAAAAAD4//8DAO7/PwAAAADw///PuAAAAAAAAAAAAMD//w8AuP8zAAAAAID////hAgAAAAAAAAAAAP7/fwCA/0MAAAAAAPz//wMJAAAAAAAAAAAA+P//AQD+DwAAAAAAwP//DwAAAAAAAAAAAADA//8HAPA/AAAAAAAA//8/AAAAAAAAAAAAAAD//z8AwH8AAAAAAAD4/38AAAAAAAAAAAAAAPD//wEA/gAAAAAAAOD//wMAAAAAAAAAAAAA4P//BwD8AwAAAAAAAP//DwgAAAAAAAAAAACA//8fAOABAAAAAAAA/v8/IAAAAAAAAAAAAAD4//8AwAcAAAAAAAD8/7/AAAAAAAAAAAAAAAD//wOADwAAAAAAAPz/P8IAAAAAAAAAAAAAAMD/DwA+AAAAAACA////CAAAAAAAAAAAAAAAAPg/AHAAAAAAAAD+//8TAAAAAAAAAAAAAAAAgP8BwAAAAAAAAP7//08AAAAAAAAAAAAAAAAAAAYAAAAAAAAA+P///wAAAAAAAAAAAAAAAAAAEAAAAAAAAADg//9/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAID///8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz//x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/P//AQAAAAAAAAAAAAAAAAAAAAAAAAAAAADg//8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P//AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGD8/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPD/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/j8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA"},"heatmap":{"cities":[{"name":"Bakı","lat":40.41,"lon":49.87,"weight":100,"radiusKm":14,"kind":"catalog"},{"name":"Abşeron","lat":40.5,"lon":50.05,"weight":38,"radiusKm":16,"kind":"catalog"},{"name":"Xırdalan","lat":40.45,"lon":49.75,"weight":30,"radiusKm":7,"kind":"catalog"},{"name":"Sumqayıt","lat":40.59,"lon":49.67,"weight":42,"radiusKm":9,"kind":"catalog"},{"name":"Qəbələ","lat":40.98,"lon":47.85,"weight":22,"radiusKm":8,"kind":"catalog"},{"name":"Quba","lat":41.36,"lon":48.51,"weight":20,"radiusKm":8,"kind":"catalog"},{"name":"Lənkəran","lat":38.75,"lon":48.85,"weight":20,"radiusKm":8,"kind":"catalog"},{"name":"Şəki","lat":41.19,"lon":47.17,"weight":18,"radiusKm":7,"kind":"catalog"},{"name":"Füzuli","lat":39.6,"lon":47.14,"weight":16,"radiusKm":7,"kind":"catalog"},{"name":"Zaqatala","lat":41.63,"lon":46.64,"weight":12,"radiusKm":6,"kind":"catalog"},{"name":"Gəncə","lat":40.68,"lon":46.36,"weight":12,"radiusKm":9,"kind":"other"},{"name":"Mingəçevir","lat":40.77,"lon":47.05,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Şirvan","lat":39.93,"lon":48.92,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Şamaxı","lat":40.63,"lon":48.64,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Xaçmaz","lat":41.46,"lon":48.8,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Naxçıvan","lat":39.21,"lon":45.41,"weight":8,"radiusKm":7,"kind":"other"},{"name":"Ağdam","lat":39.99,"lon":46.93,"weight":6,"radiusKm":6,"kind":"other"}],"scatterCount":46,"seed":7}};</script><script>/* Карта Азербайджана «с самолёта» на canvas 2D (без библиотек): растр территории (azmap-shape.mjs, geoBoundaries CC BY 4.0) → точечная
-   матрица; камера под углом медленно дрейфует над страной; тепловые пульсирующие точки объектов берутся из window.AZMAP.heatmap
-   (site-data.mjs). Данные: window.AZMAP = { shape, heatmap }. Пауза, когда блок вне экрана; reduced-motion — один статичный кадр. */
+</script><script>window.AZMAP={"shape":{"w":210,"h":156,"step":2.5,"lonC":47.75,"latC":40.15,"kx":85.088,"ky":110.57,"x0":-254.05,"y1":194.98,"cells":13507,"bits":"AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAnAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAwP8fAAAAAAAAAAwAAAAAAAAAAAAAAAAAAACA/38AAAAAAAAAeAAAAAAAAAAAAAAAAAAAAID//wEAAAAAAADwAwAAAAAAAAAAAAAAAAAAwP//HwAAAAAAAMAPAAAAAAAAAAAAAAAAAAAA//9/AQAAAAAAgH8AAAAAAAAAAAAAAAAAAAD8//8PAAAAAAAA/wMAAAAAAAAAAAAAAAAAAOD//z8AAAAAAAD+HwAAAAAAAAAAAAAAAAAAgP///wEAAAAAAPx/AAAAAAAAAAAAAAAAAAAA/v//DwAAAAAA8P8DAAAAAAAAAAAAAAAAAACQ+/8/AAAAAADA/x8AAAAAAAAAAAAAAAAAAAD8//8IAAAAAID//wAAAAAAAAAAAAAAAAAAAPz//ScAAAAAwP//BwAAAAAAAAAAAAAAAAAA4P///wEAAACA//8fAAAAAAAAAAAAAAAAAACA////DwAAAAD///8AAAAAAAAAAAAAAAAAAAD8//8/AAAA8P///wcAAAAAAAAAAAAAAAAAAKD///8BAADA////PwAAAAAAAAAAAACeAAAAAP7/7wcAAAD/////AAAAAAAAAAAAAPwHAAAA4P//PwAAAP////8HAAAAAAAAAAAA/H8AAAAA/v//AAAA/P///z8AAAAAAAAAAAD4/wMAAADg//8HAADw/////wAAAAAAAAAAAPD/fwEAAAD//x8AAMD/////BwAAAAAAAAAAwP//BwAAAPD/fwAAgP////8fAAAAAAAAAADA/v8PAAAAwP//AwAA//////8AAAAAAAAAAIDv/z8AAAAA//8/AAD+/////wMAAAAAAAAAAP7//wEAAAD8//8LAPj/////DwAAAAAAAAAA8P//DwAAAPD//38A4P////9fAAAAAAAAAADA//9/AAAA4P///6HA//////8BAAAAAAAAAAD///8fAADA//3//+f//////wcAAAAAAAAAAOD////eDwD+////////////HwAAAAAAAAAAAP7///9/APz///////////9/AAAAAAAAAAAA+P////8D8P////////////8DAAAAAAAAAAD+/////x/I/////////////w8AAAAAAAAAgPn///7///P/////////////PwAAAAAAAAAAvv//////7//////+////////AQAAAAAAAAAQ+P9/////+f/////9//////8HAAAAAAAAAABA5//////j/////////////x8AAAAAAAAAAMDA/3/6/w/9+//////f/////wAAAAAAAAAAAAD//4//f8D/////////////BwAAAAAAAAAAAPD+/+D/Afz///////////8/AAAAAAAAAAAAwP//TvwDwP////////////8BAAAAAAAAAAAA/P////0D/v///////////w8AAAAAAAAAAADA/////3/g////////////fwAAAAAAAAAAAAD+/////wf+////////////AwAAAAAAAAAAAPz/////f+D///////////8fAAAAAAAAAAAA8P//////A/////////////8DAAAAAAAAAADg////////9////////////x8AAAAAAAAAAMD/////////////////////PwAAAAAAAAAAwP//////////////////////AAAAAAAAAADA////////3/////////////8DAAAAAAAAAAD////////v/////////////w8AAAAAAAAAAP7/////////////////////PwAAAAAAAAAAfP7/////////////////////AAAAAAAAAADg+P////////////////////8HAAAAAAAAAID3//////////////////////8BAAAAAAAAAPj//////////////////////w8gAQAAAAAA4P////////////////////////kHAAAAAACA//////////f//////////////x8AAAAAAAD+/////////////////////////wEAAAAAAPj//////////////////////7f/PwAAAAAAgP//////////////////////n///DAAAAAAA/P////////7/////////////3/8nAAAAAADg//////////+//////////////z8BAAAAAAD+///////b/////////////////wEAAAAAAPD/////////////////////////DwAAAAAAAP/////////+////////////F78/AAAAAAAA8P////////////////////9/GOAAAAAAAAAA//////+//+///////////88BAAYEAAAAAADQ/////////f//////////PwAAAAAAAAAAAAD+//////////////////9/AABAAAAAAAAAAPj///////////////////8AAAABAAAAAAAA4P///////////////////wAAAAAAAAAAAACA////////////////////AAAAAAAAAAAAAAD+/3////////////////8BAAAAAAAAAAAAAPj//////////////////wMAAAAAAAAAAAAA4P/////////77///////DwAAAAAAAAAAAADA//////////f////v//9/AAAAAAAAAAAAAID///////////f7/////38AAAAAAAAAAAAAAP7/////////////3////wAAAAAAAAAAAAAA/P////v//////3//////BwAAAAAAAAAAAKDw////////f//3X/////8fAAAAAAAAAAAAcO//////////6/////////8BAAAAAAAAAACA/////////////////////wMAAAAAAAAAAADw////////////////////AwAAAAAAAAAAAAD+//////////7//f////8PAAAAAAAAAAAAAPj////////////////v/z8AAAAAAAAAAAAA4P/////////////////v/wEAAAAAAAAAAAAA////////////3///7/3/BwAAAAAAAAAAAAD8//////////////////8PAAAAAAAAAAAAAOD////////////f////3z8AAAAAAAAAAAAAAP7/////////////////fwAAAAAAAABgAAAAwP//////////v///////AQAAAAAAAMADAAAA//////////////////8PAAAAAAAAnB8AAAD4/////////9/7/////z8AAAAAAAD8fwAAAMD/////////////7////wAAAAAAAOB/AwAAAP//////////+f//////AQAAAAAAgP8PAAAA8P///////3/B//////8DAAAAAAAA/D8AAAAA////////fwD+/////wcAAAAAAADw/wAAAAA8/P//////APD/////HwAAAAAAAAD+MwAYABDw//////8BgP/9//9/AAAAAAAAAPj/AfABAAD4/////wEA/P//f/8AAAAAAAAA4P8P+A8AAMD/////AQDg///+/wMAAAAAAACA///wPwAAwP////8DAAD/////DwAAAAAAAAD8/+f/AACA/////wMAAPz///8fAAAAAAAAAPD///8DAAD8////AwAA4P////8AAAAAAAAAwP///x8AAPz///8BAAAA///3/gMAAAAAAAAA/v//PwAA/P///wcAAAD4////HwAAAAAAAADw//9/AAD4////DwAAAMD/v/93AAAAAAAAAID///8BAMD///8fAAAAAP////sFAAAAAAAAAPz//wcAAP///38AAAAA/P///z0AAAAAAAAA4P///wAA+P//fwAAAAD8////ZwAAAAAAAAAA////BwAA////AAAAAP7///8fAwAAAAAAAAD8//9/AAD8/38AAAAA/P///z8IAAAAAAAAAOC///8DAPD//wAAAAD4//9//gAAAAAAAAAAgP///w8AgP//AQAAAOD////5AwAAAAAAAAAA/v//PwAA+P8DAAAAgP///0cOAAAAAAAAAADg////AADw/w8AAAAA/v//RzwAAAAAAAAAAAD4//8DAO7/PwAAAADw///PuAAAAAAAAAAAAMD//w8AuP8zAAAAAID////hAgAAAAAAAAAAAP7/fwCA/0MAAAAAAPz//wMJAAAAAAAAAAAA+P//AQD+DwAAAAAAwP//DwAAAAAAAAAAAADA//8HAPA/AAAAAAAA//8/AAAAAAAAAAAAAAD//z8AwH8AAAAAAAD4/38AAAAAAAAAAAAAAPD//wEA/gAAAAAAAOD//wMAAAAAAAAAAAAA4P//BwD8AwAAAAAAAP//DwgAAAAAAAAAAACA//8fAOABAAAAAAAA/v8/IAAAAAAAAAAAAAD4//8AwAcAAAAAAAD8/7/AAAAAAAAAAAAAAAD//wOADwAAAAAAAPz/P8IAAAAAAAAAAAAAAMD/DwA+AAAAAACA////CAAAAAAAAAAAAAAAAPg/AHAAAAAAAAD+//8TAAAAAAAAAAAAAAAAgP8BwAAAAAAAAP7//08AAAAAAAAAAAAAAAAAAAYAAAAAAAAA+P///wAAAAAAAAAAAAAAAAAAEAAAAAAAAADg//9/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAID///8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz//x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/P//AQAAAAAAAAAAAAAAAAAAAAAAAAAAAADg//8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P//AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGD8/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPD/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/j8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA"},"heatmap":{"cities":[{"name":"Bakı","lat":40.41,"lon":49.87,"weight":100,"radiusKm":14,"kind":"catalog"},{"name":"Abşeron","lat":40.5,"lon":50.05,"weight":38,"radiusKm":16,"kind":"catalog"},{"name":"Xırdalan","lat":40.45,"lon":49.75,"weight":30,"radiusKm":7,"kind":"catalog"},{"name":"Sumqayıt","lat":40.59,"lon":49.67,"weight":42,"radiusKm":9,"kind":"catalog"},{"name":"Qəbələ","lat":40.98,"lon":47.85,"weight":22,"radiusKm":8,"kind":"catalog"},{"name":"Quba","lat":41.36,"lon":48.51,"weight":20,"radiusKm":8,"kind":"catalog"},{"name":"Lənkəran","lat":38.75,"lon":48.85,"weight":20,"radiusKm":8,"kind":"catalog"},{"name":"Şəki","lat":41.19,"lon":47.17,"weight":18,"radiusKm":7,"kind":"catalog"},{"name":"Füzuli","lat":39.6,"lon":47.14,"weight":16,"radiusKm":7,"kind":"catalog"},{"name":"Zaqatala","lat":41.63,"lon":46.64,"weight":12,"radiusKm":6,"kind":"catalog"},{"name":"Gəncə","lat":40.68,"lon":46.36,"weight":12,"radiusKm":9,"kind":"other"},{"name":"Mingəçevir","lat":40.77,"lon":47.05,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Şirvan","lat":39.93,"lon":48.92,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Şamaxı","lat":40.63,"lon":48.64,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Xaçmaz","lat":41.46,"lon":48.8,"weight":8,"radiusKm":6,"kind":"other"},{"name":"Naxçıvan","lat":39.21,"lon":45.41,"weight":8,"radiusKm":7,"kind":"other"},{"name":"Ağdam","lat":39.99,"lon":46.93,"weight":6,"radiusKm":6,"kind":"other"}],"scatterCount":46,"seed":7}};</script><script>/* V4 · Азербайджан из шестигранных призм (hex-bin): шаг сетки ~15 км, ячейка входит, если её центр в стране (window.AZMAP.shape).
+   Высота и цвет призмы — плотность объектов: сумма вкладов городов window.AZMAP.heatmap (вес × гауссиана по radiusKm, км).
+   Баку — башня, города — столбики, остальное — низкая плитка-подложка. Свет мягкий: боковые грани темнее, верх светлее, тень на земле.
+   Painter's algorithm: дальние → ближние (порядок пересчитывается лишь при заметном повороте), цвета — из заранее посчитанной палитры
+   (сплошные заливки; градиент только на гранях самых высоких башен). Камера наклонена, медленный облёт и покачивание.
+   «Дыхание» ±5% высоты у освещённых городов, пульс-кольцо у Баку. Пауза вне экрана и в скрытой вкладке; reduced-motion — один кадр. */
 (function () {
   var box = document.querySelector('.globe'), cfg = window.AZMAP; if (!box || !cfg) return;
   var cv = box.querySelector('canvas.gl'); if (!cv) return;
-  var rm = matchMedia('(prefers-reduced-motion:reduce)').matches, mob = innerWidth < 700, sh = cfg.shape, hm = cfg.heatmap;
-  var ctx = cv.getContext('2d'), RAD = Math.PI / 180, PITCH = 37 * RAD, cP = Math.cos(PITCH), sP = Math.sin(PITCH), DIST = 700;
-  /* --- растр суши → координаты клеток в км (x на восток, y на север, ноль — центр страны) --- */
-  var bin = atob(sh.bits), W0 = sh.w, H0 = sh.h, STEP = sh.step;
-  function isLand(i, j) { if (i < 0 || j < 0 || i >= W0 || j >= H0) return false; var n = j * W0 + i; return (bin.charCodeAt(n >> 3) >> (n & 7)) & 1; }
-  var seed = hm.seed || 1; function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
-  var skip = mob ? 2 : 1, tones = [[], [], [], []], edge = [], i, j;
-  for (j = 0; j < H0; j += skip) for (i = 0; i < W0; i += skip) {
-    if (!isLand(i, j)) continue;
-    var px = sh.x0 + (i + .5) * STEP, py = sh.y1 - (j + .5) * STEP;
-    if (!isLand(i - 1, j) || !isLand(i + 1, j) || !isLand(i, j - 1) || !isLand(i, j + 1)) edge.push(px, py); else tones[(rnd() * 3.99) | 0].push(px, py);
+  var rm = matchMedia('(prefers-reduced-motion:reduce)').matches, mob = innerWidth < 700, hm = cfg.heatmap, sh = cfg.shape;
+  var ctx = cv.getContext('2d'), RAD = Math.PI / 180, DIST = 700, i, j, k, n;
+
+  /* --- 1. растр суши (бит (j*w+i): байт >>3, бит &7) и принадлежность точки --- */
+  var bin = atob(sh.bits);
+  function land(x, y) {
+    var a = Math.floor((x - sh.x0) / sh.step), b = Math.floor((sh.y1 - y) / sh.step); if (a < 0 || b < 0 || a >= sh.w || b >= sh.h) return false;
+    var q = b * sh.w + a; return (bin.charCodeAt(q >> 3) >> (q & 7) & 1) === 1;
   }
-  /* --- тепловые точки: города (облака) + хаотичные точки по стране --- */
-  function landAt(x, y) { return isLand(Math.floor((x - sh.x0) / STEP), Math.floor((sh.y1 - y) / STEP)); }
   function toKm(lon, lat) { return [(lon - sh.lonC) * sh.kx, (lat - sh.latC) * sh.ky]; }
-  var pts = [], anchors = [], BAKU = null;
-  hm.cities.forEach(function (c) {
-    var xy = toKm(c.lon, c.lat), n = Math.round(c.weight * (mob ? .5 : .9)), t, tries, x, y, a, d;
-    for (t = 0; t < n; t++) {
-      for (tries = 0; tries < 8; tries++) { a = rnd() * 6.283; d = Math.pow(rnd(), .8) * c.radiusKm; x = xy[0] + Math.cos(a) * d; y = xy[1] + Math.sin(a) * d; if (landAt(x, y)) break; }
-      if (tries < 8) pts.push({ x: x, y: y, s: .5 + rnd() * .7 + c.weight / 160, ph: rnd() * 6.283, per: 2200 + rnd() * 2600, w: c.weight });
-    }
-    anchors.push({ x: xy[0], y: xy[1], s: 1.2 + Math.sqrt(c.weight) * .14, ph: rnd() * 6.283, per: 3200 + rnd() * 1200, w: c.weight });
-    if (!BAKU || c.weight > BAKU.w) BAKU = anchors[anchors.length - 1];
-  });
-  for (var q = 0, sc = mob ? Math.round(hm.scatterCount * .6) : hm.scatterCount; q < sc; q++) {
-    for (var tr = 0, x1, y1; tr < 40; tr++) { x1 = sh.x0 + rnd() * W0 * STEP; y1 = sh.y1 - rnd() * H0 * STEP; if (landAt(x1, y1)) { pts.push({ x: x1, y: y1, s: .5 + rnd() * .5, ph: rnd() * 6.283, per: 2600 + rnd() * 3000, w: 4 }); break; } }
+
+  /* --- 2. города + рассеянные точки (маленькие бугры) --- */
+  var seed = hm.seed || 1; function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+  var src = [], BAKU = null;
+  hm.cities.forEach(function (c) { var p = toKm(c.lon, c.lat), o = { x: p[0], y: p[1], w: c.weight, s: Math.max(c.radiusKm, 9), city: true }; src.push(o); if (!BAKU || o.w > BAKU.w) BAKU = o; });
+  for (var qn = 0, x1, y1, tr; qn < hm.scatterCount; qn++) for (tr = 0; tr < 40; tr++) { x1 = -250 + rnd() * 510; y1 = -190 + rnd() * 380; if (land(x1, y1)) { src.push({ x: x1, y: y1, w: 3 + rnd() * 3, s: 8 }); break; } }
+
+  /* --- 3. шестигранная сетка (pointy-top): шаг между центрами STEP, R — радиус описанной окружности --- */
+  var STEP = mob ? 18 : 14.5, R = STEP / Math.sqrt(3), GAP = .95, RV = R * GAP, DY = STEP * .8660254;
+  var HX = [], HY = [], NF = 6, NX = [], NY = [];
+  for (k = 0; k < 6; k++) { var av = (30 + 60 * k) * RAD, an = 60 * k * RAD; HX.push(Math.cos(av) * RV); HY.push(Math.sin(av) * RV); NX.push(Math.cos(an)); NY.push(Math.sin(an)); }
+  var cells = [], maxD = 0, r, c, x, y;
+  for (r = -Math.ceil(200 / DY); r <= Math.ceil(200 / DY); r++) for (c = -Math.ceil(280 / STEP); c <= Math.ceil(290 / STEP); c++) {
+    x = c * STEP + (r & 1) * STEP / 2; y = r * DY; if (!land(x, y)) continue;
+    var d = 0; for (n = 0; n < src.length; n++) { var s = src[n], dd = (x - s.x) * (x - s.x) + (y - s.y) * (y - s.y); d += s.w * Math.exp(-dd / (2 * s.s * s.s)); }
+    if (d > maxD) maxD = d; cells.push({ x: x, y: y, d: d, ph: rnd() * 6.283, per: 2600 + rnd() * 2400, bk: 0 });
   }
-  /* --- спрайт свечения (красный → прозрачный) --- */
-  var spr = document.createElement('canvas'); spr.width = spr.height = 64; var sx = spr.getContext('2d'), gr = sx.createRadialGradient(32, 32, 0, 32, 32, 32);
-  gr.addColorStop(0, 'rgba(35,120,63,.95)'); gr.addColorStop(.25, 'rgba(35,120,63,.45)'); gr.addColorStop(1, 'rgba(35,120,63,0)'); sx.fillStyle = gr; sx.fillRect(0, 0, 64, 64);
-  /* --- камера --- */
-  var W, F, OY, vig, CX0 = -45, T = 150000, run = false, raf = 0, last = 0, clock = 0;
+  var HMAX = 62, H0 = 1.6;
+  var NL = 28;
+  cells.forEach(function (q) { var t = Math.pow(q.d / maxD, .5); q.t = t; q.h0 = H0 + t * HMAX + rnd() * .5; q.lv = Math.min(NL - 1, Math.round(t * (NL - 1) * 1.0)); q.tall = q.h0 > 4.5; q.lit = q.t > .17; });
+  /* уровни палитры — выше первого использования */
+  cells.forEach(function (q) { q.lv = Math.min(NL - 1, Math.round(q.t * (NL - 1))); });
+  var bakuCell = null; cells.forEach(function (q) { if (!bakuCell || q.d > bakuCell.d) bakuCell = q; });
+  bakuCell.baku = true;
+
+  /* --- 4. палитра: светло-серый → #23783F → #009846; грани: свет с юго-запада сверху --- */
+  var stops = cfg.hexStops || [[0, [226, 232, 225]], [.2, [176, 204, 183]], [.45, [35, 120, 63]], [1, [0, 160, 74]]]; /* цвета берёт из window.AZMAP.hexStops (build.mjs по палитре); по умолчанию зелёный */
+  function ramp(t) { for (var a = 1; a < stops.length; a++) if (t <= stops[a][0]) { var p = stops[a - 1], q = stops[a], f = (t - p[0]) / (q[0] - p[0]); return [0, 1, 2].map(function (m) { return p[1][m] + (q[1][m] - p[1][m]) * f; }); } return stops[stops.length - 1][1]; }
+  function mixc(a, b, f) { return [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f, a[2] + (b[2] - a[2]) * f]; }
+  function css(a, al) { return 'rgb(' + Math.round(a[0]) + ',' + Math.round(a[1]) + ',' + Math.round(a[2]) + ')'; }
+  var LX = -.55, LY = -.7, DARK = cfg.hexDark || [14, 38, 26], pal = [];
+  for (k = 0; k < NL; k++) {
+    var base = ramp(Math.min(1, k / (NL - 1) * 1.02)), P = { top: css(mixc(base, [255, 255, 255], .16 + .1 * (1 - k / NL))), edge: 'rgba(255,255,255,' + (.5 - .2 * k / NL).toFixed(2) + ')', side: [], sideRGB: [] };
+    for (var f = 0; f < 6; f++) { var lam = NX[f] * LX + NY[f] * LY, fac = Math.max(0, Math.min(1, .5 + .7 * lam)); var rgb = mixc(mixc(base, DARK, .5), mixc(base, [255, 255, 255], .0), fac * .85 + .1); P.side.push(css(rgb)); P.sideRGB.push(rgb); }
+    pal.push(P);
+  }
+  var nc = cells.length, tallIdx = [], lowIdx = [];
+  cells.forEach(function (q, ix) { (q.tall ? tallIdx : lowIdx).push(ix); });
+
+  /* --- 5. камера --- */
+  var L0, DPR, F, OY, vig, T = 160000, run = false, raf = 0, last = 0, clock = 0, spr, sortYaw = 9;
+  spr = document.createElement('canvas'); spr.width = spr.height = 64; var sx = spr.getContext('2d'), gr = sx.createRadialGradient(32, 32, 0, 32, 32, 32);
+  gr.addColorStop(0, 'rgba(235,255,242,.95)'); gr.addColorStop(.2, 'rgba(120,225,160,.55)'); gr.addColorStop(.55, 'rgba(0,152,70,.18)'); gr.addColorStop(1, 'rgba(0,152,70,0)'); sx.fillStyle = gr; sx.fillRect(0, 0, 64, 64);
   function size() {
-    var dpr = 1; W = Math.min(Math.round(box.clientWidth * dpr), 1000); cv.width = cv.height = W; F = W * (mob ? .95 : rm ? 1.05 : 1.2); OY = W * (mob ? .5 : .33);
-    vig = ctx.createRadialGradient(W / 2, W / 2, W * .43, W / 2, W / 2, W * .5); vig.addColorStop(0, 'rgba(0,0,0,0)'); vig.addColorStop(1, 'rgba(0,0,0,1)');
+    DPR = Math.min(window.devicePixelRatio || 1, 2); L0 = Math.min(Math.round(box.clientWidth), 1000); cv.width = cv.height = Math.round(L0 * DPR);
+    F = L0 * (mob ? .86 : 1.08); OY = L0 * (mob ? .46 : .43);
+    vig = ctx.createRadialGradient(L0 / 2, L0 / 2, L0 * .42, L0 / 2, L0 / 2, L0 * .5); vig.addColorStop(0, 'rgba(0,0,0,0)'); vig.addColorStop(1, 'rgba(0,0,0,1)');
   }
-  function cam(t) { /* t — мс полёта: плавный дрейф вдоль страны + лёгкое покачивание курса */
-    if (rm) return [CX0, 28, 0];
-    var k = 2 * Math.PI * t / T; return [CX0 + (mob ? 30 : 110) * Math.sin(k), 28 + (mob ? 6 : 14) * Math.sin(k * 1.7 + 1), (12 + 7 * Math.sin(k * 2.3 + .5)) * RAD];
+  var yaw = 0, pitch = 0, cx = 8, cy = 0, cY = 1, sY = 0, cP, sP, half, S;
+  function cam(t) {
+    if (rm) { yaw = -8 * RAD; pitch = 51 * RAD; return; }
+    var kk = 2 * Math.PI * t / T; yaw = (-6 + 18 * Math.sin(kk) + 4 * Math.sin(kk * 2.7 + 1)) * RAD; pitch = (51 + 3 * Math.sin(kk * 3.1 + .4)) * RAD;
+  }
+  var X, Y;
+  function proj(px, py, z) { var dx = px - cx, dy = py - cy, u = dx * cY + dy * sY, v = -dx * sY + dy * cY; S = F / (DIST + v * sP - z * cP); X = half + u * S; Y = OY - (v * cP + z * sP) * S; }
+
+  /* --- 6. кадр --- */
+  var key = new Float32Array(nc), bx = new Float32Array(nc * 6), by = new Float32Array(nc * 6), tx = new Float32Array(nc * 6), ty = new Float32Array(nc * 6), hh = new Float32Array(nc);
+  function byDepth(a, b) { return key[b] - key[a]; }
+  function prism(q, ix, u0) {
+    var o = ix * 6, P = pal[q.lv], f, a, b, h = hh[ix], grad = q.t > .5;
+    for (f = 0; f < 6; f++) { /* видимая грань: нормаль смотрит к камере (v<0) */
+      var nv = -NX[f] * sY + NY[f] * cY; if (nv >= -.02) continue;
+      a = (f + 5) % 6; b = f;
+      ctx.beginPath(); ctx.moveTo(bx[o + a], by[o + a]); ctx.lineTo(bx[o + b], by[o + b]); ctx.lineTo(tx[o + b], ty[o + b]); ctx.lineTo(tx[o + a], ty[o + a]); ctx.closePath();
+      if (grad) { var g = ctx.createLinearGradient(0, by[o + a], 0, ty[o + a]), lo = pal[Math.max(0, q.lv - 12)].sideRGB[f], hi = P.sideRGB[f]; g.addColorStop(0, css(mixc(lo, [214, 228, 214], .25))); g.addColorStop(.7, css(hi)); g.addColorStop(1, css(mixc(hi, [255, 255, 255], .12))); ctx.fillStyle = g; ctx.strokeStyle = css(hi); }
+      else { ctx.fillStyle = ctx.strokeStyle = P.side[f]; }
+      ctx.fill(); ctx.lineWidth = .7; ctx.stroke();
+    }
+    ctx.beginPath(); ctx.moveTo(tx[o], ty[o]); for (f = 1; f < 6; f++) ctx.lineTo(tx[o + f], ty[o + f]); ctx.closePath();
+    ctx.fillStyle = P.top; ctx.fill(); ctx.lineWidth = .7 * u0; ctx.strokeStyle = P.edge; ctx.stroke();
+  }
+  function shadow(q, ix) { /* тень: выпуклая оболочка основания и его сдвига от света; ограничена длиной */
+    var len = Math.min(q.h0, 40) * .5, sxk = -LX * len, syk = -LY * len, pts = [], a, m, p, o;
+    for (a = 0; a < 6; a++) { proj(q.x + HX[a], q.y + HY[a], H0); pts.push([X, Y]); proj(q.x + HX[a] + sxk, q.y + HY[a] + syk, H0); pts.push([X, Y]); }
+    pts.sort(function (p1, p2) { return p1[0] - p2[0] || p1[1] - p2[1]; });
+    function cr(o1, a1, b1) { return (a1[0] - o1[0]) * (b1[1] - o1[1]) - (a1[1] - o1[1]) * (b1[0] - o1[0]); }
+    var lo = [], up = [];
+    for (a = 0; a < pts.length; a++) { while (lo.length > 1 && cr(lo[lo.length - 2], lo[lo.length - 1], pts[a]) <= 0) lo.pop(); lo.push(pts[a]); }
+    for (a = pts.length - 1; a >= 0; a--) { while (up.length > 1 && cr(up[up.length - 2], up[up.length - 1], pts[a]) <= 0) up.pop(); up.push(pts[a]); }
+    lo.pop(); up.pop(); var hull = lo.concat(up);
+    ctx.moveTo(hull[0][0], hull[0][1]); for (a = 1; a < hull.length; a++) ctx.lineTo(hull[a][0], hull[a][1]); ctx.closePath();
   }
   function draw(t) {
-    if (!W) return;
-    var c = cam(t), cx = c[0], cy = c[1], yaw = c[2], cY = Math.cos(yaw), sY = Math.sin(yaw), half = W / 2, k, a, list, n, u, v, dep, X, Y, s;
-    ctx.clearRect(0, 0, W, W);
-    function proj(x, y) { var dx = x - cx, dy = y - cy; u = dx * cY + dy * sY; v = -dx * sY + dy * cY; dep = DIST + v * sP; s = F / dep; X = half + u * s; Y = OY - v * cP * s; }
-    var base = Math.max(1, STEP * skip * F / DIST * (mob ? .68 : .5)), cols = ['rgba(122,128,138,.30)', 'rgba(122,128,138,.42)', 'rgba(122,128,138,.55)', 'rgba(122,128,138,.68)'];
-    for (k = 0; k < 4; k++) { ctx.fillStyle = cols[k]; list = tones[k]; for (n = 0; n < list.length; n += 2) { proj(list[n], list[n + 1]); if (X < -4 || Y < -4 || X > W + 4 || Y > W + 4) continue; a = Math.max(1, base * s * DIST / F); ctx.fillRect(X - a / 2, Y - a / 2, a, a); } }
-    ctx.fillStyle = 'rgba(70,76,88,.78)'; for (n = 0; n < edge.length; n += 2) { proj(edge[n], edge[n + 1]); if (X < -4 || Y < -4 || X > W + 4 || Y > W + 4) continue; a = Math.max(1.2, base * 1.1 * s * DIST / F); ctx.fillRect(X - a / 2, Y - a / 2, a, a); }
-    var u0 = W / 900;
-    for (n = 0; n < anchors.length; n++) { var an = anchors[n]; proj(an.x, an.y); if (X < -40 || Y < -40 || X > W + 40 || Y > W + 40) continue; var p = rm ? .5 : .5 + .5 * Math.sin(t / an.per * 6.283 + an.ph), g = an.s * 9 * u0 * s * DIST / F * (.85 + .5 * p); ctx.globalAlpha = .35 + .4 * p; ctx.drawImage(spr, X - g, Y - g, g * 2, g * 2); }
-    for (n = 0; n < pts.length; n++) { var pt = pts[n]; proj(pt.x, pt.y); if (X < -20 || Y < -20 || X > W + 20 || Y > W + 20) continue; var pp = rm ? .5 : .5 + .5 * Math.sin(t / pt.per * 6.283 + pt.ph), gg = pt.s * 3.6 * u0 * s * DIST / F * (.8 + .6 * pp); ctx.globalAlpha = .3 + .55 * pp; ctx.drawImage(spr, X - gg, Y - gg, gg * 2, gg * 2); }
-    ctx.globalAlpha = 1; ctx.fillStyle = 'rgba(35,120,63,.95)';
-    for (n = 0; n < pts.length; n++) { pt = pts[n]; proj(pt.x, pt.y); if (X < 0 || Y < 0 || X > W || Y > W) continue; a = Math.max(1.8, pt.s * 1.25 * u0 * 2 * s * DIST / F); ctx.fillRect(X - a / 2, Y - a / 2, a, a); }
-    if (BAKU) { proj(BAKU.x, BAKU.y); var ph = rm ? .35 : (t / 2400) % 1; ctx.fillStyle = '#23783F'; ctx.beginPath(); ctx.arc(X, Y, 4.2 * u0 * s * DIST / F, 0, 6.283); ctx.fill();
-      ctx.strokeStyle = 'rgba(35,120,63,' + (.7 * (1 - ph)).toFixed(2) + ')'; ctx.lineWidth = 1.5 * u0; ctx.beginPath(); ctx.ellipse(X, Y, (5 + ph * 24) * u0 * s * DIST / F, (5 + ph * 24) * u0 * s * DIST / F * cP * .9, 0, 0, 6.283); ctx.stroke(); }
-    ctx.globalCompositeOperation = 'destination-out'; ctx.fillStyle = vig; ctx.fillRect(0, 0, W, W); ctx.globalCompositeOperation = 'source-over';
+    if (!L0) return;
+    cam(t); cP = Math.cos(pitch); sP = Math.sin(pitch); cY = Math.cos(yaw); sY = Math.sin(yaw); half = L0 * (mob ? .53 : .545);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0); ctx.clearRect(0, 0, L0, L0); ctx.lineJoin = 'round';
+    var u0 = L0 / 900, ix, q, f, o, ps, sw = Math.abs(yaw - sortYaw) > .012;
+    for (ix = 0; ix < nc; ix++) {
+      q = cells[ix]; ps = rm ? 0 : Math.sin(t / q.per * 6.283 + q.ph);
+      hh[ix] = q.h0 * (q.lit ? 1 + .05 * ps * Math.min(1, q.t * 3) : 1); o = ix * 6;
+      for (f = 0; f < 6; f++) { proj(q.x + HX[f], q.y + HY[f], 0); bx[o + f] = X; by[o + f] = Y; proj(q.x + HX[f], q.y + HY[f], hh[ix]); tx[o + f] = X; ty[o + f] = Y; }
+      if (sw) key[ix] = -(q.x - cx) * sY + (q.y - cy) * cY;
+    }
+    if (sw) { sortYaw = yaw; tallIdx.sort(byDepth); lowIdx.sort(byDepth); }
+    for (n = 0; n < lowIdx.length; n++) prism(cells[lowIdx[n]], lowIdx[n], u0);
+    /* тени башен и пульс-кольцо — на земле, под высокими призмами */
+    ctx.beginPath(); for (n = 0; n < tallIdx.length; n++) { q = cells[tallIdx[n]]; if (q.h0 > 9) shadow(q, tallIdx[n]); }
+    ctx.fillStyle = 'rgba(14,38,26,.16)'; ctx.fill('nonzero');
+    ctx.beginPath(); for (n = 0; n < tallIdx.length; n++) { q = cells[tallIdx[n]]; if (q.h0 > 22) shadow(q, tallIdx[n]); }
+    ctx.fillStyle = 'rgba(14,38,26,.14)'; ctx.fill('nonzero');
+    var ph = rm ? .4 : (t / 3200) % 1; proj(bakuCell.x, bakuCell.y, H0 + .3);
+    for (k = 0; k < 2; k++) { var p2 = (ph + k * .5) % 1, rr = (10 + p2 * 70) * S;
+      ctx.strokeStyle = 'rgba(0,152,70,' + (.75 * (1 - p2) * (1 - p2)).toFixed(3) + ')'; ctx.lineWidth = (1.6 - p2) * u0 * 1.4; ctx.beginPath(); ctx.ellipse(X, Y, rr, rr * cP, 0, 0, 6.283); ctx.stroke(); }
+    for (n = 0; n < tallIdx.length; n++) prism(cells[tallIdx[n]], tallIdx[n], u0);
+    /* мягкое свечение на верху башни Баку */
+    o = (bakuCell.idx || (bakuCell.idx = cells.indexOf(bakuCell))) * 6; var gx = 0, gy = 0; for (f = 0; f < 6; f++) { gx += tx[o + f]; gy += ty[o + f]; } gx /= 6; gy /= 6;
+    var gs = 34 * u0 * (1 + (rm ? 0 : .12 * Math.sin(t / 1300))); ctx.globalAlpha = .7; ctx.drawImage(spr, gx - gs, gy - gs, gs * 2, gs * 2); ctx.globalAlpha = 1;
+    ctx.globalCompositeOperation = 'destination-out'; ctx.fillStyle = vig; ctx.fillRect(0, 0, L0, L0); ctx.globalCompositeOperation = 'source-over';
   }
-  function loop(ts) { if (!run) return; raf = requestAnimationFrame(loop); if (ts - last < 40) return; clock += last ? Math.min(ts - last, 100) : 0; last = ts; draw(clock); }
+  function loop(ts) { if (!run) return; raf = requestAnimationFrame(loop); if (ts - last < 36) return; clock += last ? Math.min(ts - last, 100) : 0; last = ts; draw(clock); }
   function go(on) { if (on && !run) { run = true; last = 0; raf = requestAnimationFrame(loop); } else if (!on && run) { run = false; cancelAnimationFrame(raf); } }
   size(); draw(0);
-  addEventListener('resize', function () { var w = box.clientWidth; if (Math.min(Math.round(w), 1000) === W) return; size(); if (!run) draw(clock); });
+  addEventListener('resize', function () { if (Math.min(Math.round(box.clientWidth), 1000) === L0) return; size(); if (!run) draw(clock); });
   if (!rm) { var vis = false; new IntersectionObserver(function (es) { vis = es[0].isIntersecting; go(vis && !document.hidden); }, { threshold: 0.05 }).observe(box); document.addEventListener('visibilitychange', function () { go(vis && !document.hidden); }); }
 })();
 </script></body></html>

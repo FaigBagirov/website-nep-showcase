@@ -51,3 +51,10 @@
 
 ## Карта Азербайджана (блок «Our impact»)
 Контур территории (с Нахичеванью и Карабахом, международно признанные границы): geoBoundaries gbOpen, Azerbaijan ADM0 (https://www.geoboundaries.org, данные Sentinel-2 land cover), лицензия **CC BY 4.0**. Из него сделан растр точечной матрицы `azmap-shape.mjs` (tools/azmap-prep.mjs; изменено: упрощён до сетки 2,5 км). Атрибуция — в подвале (AZ/RU). Точки объектов — данные NEP в `site-data.mjs` (heatmap).
+
+## Фото блока «Свой склад» — R5, 30.10.2026
+Данные — `..\site-data.mjs` (`partsPhoto`). Заменило фото lobby (оранжевое, не в палитре; файлы lobby*.webp больше не используются).
+
+| Файл | Страница источника | Автор; лицензия | Изменения |
+|---|---|---|---|
+| warehouse.webp, warehouse-960.webp | https://www.pexels.com/photo/industrial-warehouse-storage-racks-and-shelving-36126272/ | Adrien Olichon; Pexels License (бесплатно, атрибуция не обязательна; указана по доброй воле) | обрезано справа (убран тёплый поддон), насыщенность −40%, размер 1400/960 px; оригинал в `_download\r5\` вне коммита |

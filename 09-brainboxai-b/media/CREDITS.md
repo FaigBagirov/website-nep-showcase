@@ -48,3 +48,6 @@
 
 ## Логотип NEP Servis
 Нарисован по образцу логотипа NEP Engineering (https://nep.az, материал заказчика): `logo-nep-servis.svg`, `logo-nep-servis-compact.svg`, `favicon-nep-servis.svg`. Описание — `..\logo-options\README-nep-servis.md`.
+
+## Карта Азербайджана (блок «Our impact»)
+Контур территории (с Нахичеванью и Карабахом, международно признанные границы): geoBoundaries gbOpen, Azerbaijan ADM0 (https://www.geoboundaries.org, данные Sentinel-2 land cover), лицензия **CC BY 4.0**. Из него сделан растр точечной матрицы `azmap-shape.mjs` (tools/azmap-prep.mjs; изменено: упрощён до сетки 2,5 км). Атрибуция — в подвале (AZ/RU). Точки объектов — данные NEP в `site-data.mjs` (heatmap).

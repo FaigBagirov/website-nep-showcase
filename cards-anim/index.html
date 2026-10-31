@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>NEP Servis — xidmət kartlarının animasiya variantları</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+<style>
+:root{--k:#1B1F1D;--r:#23783F;--f:'Inter','Atlas Grotesk',Helvetica,Arial,sans-serif;--u:clamp(14px,calc(16px + (100vw - 1440px)/480),18px)}
+*{box-sizing:border-box}
+body{margin:0;max-width:100vw;font:300 16px/1.5 var(--f);color:#fff;background:var(--k);font-size:var(--u);overflow-x:hidden}
+.w{width:min(1240px,100% - 80px);margin:0 auto}
+.dk{padding:60px 0 96px}
+.hint{font-size:13px;color:#939ba0;margin:0 0 40px;max-width:760px}
+h2{font:300 clamp(28px,2.5vw,36px)/1.1 var(--f);letter-spacing:-.02em;margin:0 0 12px;max-width:560px}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:30px}
+.dc{border:1px solid rgba(255,255,255,.25);border-radius:4px;padding:30px;min-height:295px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.dc:nth-child(n+3){min-height:322px}
+.dc .n{font:300 56px/1 var(--f);letter-spacing:-.02em;margin-bottom:18px}
+.dc p{margin:0;font-size:calc(var(--u)*1.5);max-width:300px;line-height:1.1;position:relative}
+.dc canvas{position:absolute;right:0;top:0;height:100%;width:60%}
+.dc .tag{position:absolute;left:30px;top:24px;font:400 11px var(--f);letter-spacing:.14em;color:#5FBF7D;border:1px solid rgba(95,191,125,.5);border-radius:3px;padding:4px 8px}
+.row{margin:0 0 6px}
+@media(max-width:980px){.dg{grid-template-columns:1fr}.w{width:calc(100% - 40px)}}
+</style>
+</head>
+<body>
+<section class="dk"><div class="w">
+<h2>Biz sadəcə iqlim texnikası satmırıq</h2>
+<p class="hint">Animasiya variantları: hər kart üçün A və B. Seçim üçün prototip — saytda hələ yoxdur. / Прототипы анимаций карточек: для каждой услуги варианты A и B, выберите глазами.</p>
+<div id="grid"></div>
+</div></section>
+<script>
+var TEXT=[
+ 'MRV, VRV, çillerlərin və AHU-nun işə salınması',
+ 'Elektron platalar, avtomatika və soyuducu konturların kompleks diaqnostikası',
+ 'Kənar quraşdırma xətalarının aradan qaldırılması',
+ 'Müqavilə əsasında texniki xidmət'];
+var g=document.getElementById('grid');
+TEXT.forEach(function(s,i){var r=document.createElement('div');r.className='dg';
+ ['a','b'].forEach(function(v){var id='0'+(i+1)+v;
+  r.insertAdjacentHTML('beforeend','<div class="dc" data-id="'+id+'"><canvas aria-hidden="true"></canvas><span class="tag">0'+(i+1)+'-'+v.toUpperCase()+'</span><div class="n">0'+(i+1)+'</div><p>'+s+'</p></div>')});
+ g.appendChild(r)});
+var q=new URLSearchParams(location.search), FZ=q.get('t'); // ?t=still | ?t=3.5 — застывший кадр (для скринов)
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+['01a','01b','02a','02b','03a','03b','04a','04b'].forEach(function(id){var s=document.createElement('script');s.src='anim-'+id+'.js';s.onload=function(){start(id)};document.body.appendChild(s)});
+function start(id){
+ var box=document.querySelector('.dc[data-id="'+id+'"]'),cv=box.querySelector('canvas');
+ if(!window.CA||!CA[id])return;
+ var A=CA[id](cv),run=false,raf,t0=null,dpr=Math.min(devicePixelRatio||1,2),x=cv.getContext('2d'),tt=0;
+ function size(){var w=cv.clientWidth,h=cv.clientHeight;cv.width=w*dpr;cv.height=h*dpr;x.setTransform(dpr,0,0,dpr,0,0);A.resize(w,h);paint(tt)}
+ function paint(t){x.clearRect(0,0,cv.clientWidth,cv.clientHeight);A.draw(t)}
+ function frame(ts){if(t0===null)t0=ts;tt=(ts-t0)/1000;paint(tt);if(run)raf=requestAnimationFrame(frame)}
+ size();addEventListener('resize',size);
+ if(FZ!==null){tt=FZ==='still'?A.still:+FZ;paint(tt);return}
+ if(rm){tt=A.still;paint(tt);return}
+ new IntersectionObserver(function(es){run=es[0].isIntersecting;if(run){t0=null;raf=requestAnimationFrame(frame)}else cancelAnimationFrame(raf)}).observe(box);
+}
+</script>
+</body>
+</html>

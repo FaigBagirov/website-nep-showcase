@@ -47,7 +47,7 @@
 | clients/mcdonalds.svg | McDonald's | Commons, File:McDonald's Golden Arches.svg; общественное достояние |
 
 ## Логотип NEP Servis
-Нарисован по образцу логотипа NEP Engineering (https://nep.az, материал заказчика): `logo-nep-servis.svg`, `logo-nep-servis-compact.svg`, `favicon-nep-servis.svg`. Описание — `..\logo-options\README-nep-servis.md`.
+Нарисован по образцу логотипа NEP Engineering (https://nep.az, материал заказчика): `logo-A.svg`, `logo-A-dark.svg` (текст переведён в контуры, Arial Bold), `favicon-nep-servis.svg`. Описание — `..\logo-options\README-nep-servis.md`.
 
 ## Карта Азербайджана (блок «Our impact»)
 Контур территории (с Нахичеванью и Карабахом, международно признанные границы): geoBoundaries gbOpen, Azerbaijan ADM0 (https://www.geoboundaries.org, данные Sentinel-2 land cover), лицензия **CC BY 4.0**. Из него сделан растр точечной матрицы `azmap-shape.mjs` (tools/azmap-prep.mjs; изменено: упрощён до сетки 2,5 км). Атрибуция — в подвале (AZ/RU). Точки объектов — данные NEP в `site-data.mjs` (heatmap).
@@ -58,3 +58,18 @@
 | Файл | Страница источника | Автор; лицензия | Изменения |
 |---|---|---|---|
 | warehouse.webp, warehouse-960.webp | https://www.pexels.com/photo/industrial-warehouse-storage-racks-and-shelving-36126272/ | Adrien Olichon; Pexels License (бесплатно, атрибуция не обязательна; указана по доброй воле) | обрезано справа (убран тёплый поддон), насыщенность −40%, размер 1400/960 px; оригинал в `_download\r5\` вне коммита |
+
+## Фото карточек и объектов — 04.11.2026 (решения Фаига по листам k9)
+Оригиналы — `_download\k9-raw\` и `_download\k9\` (вне коммита); в сайте — WebP, длинная сторона ≤1600 px, q80, плюс варианты `-640` и `-960` для srcset (`tools\photos-prep.py`). Полная таблица лицензий всех фото — `..\content\PHOTO-LICENSES.md`.
+
+| Файл | Где | Источник | Автор; лицензия |
+|---|---|---|---|
+| teaser-consult | тизер 1 «Konsultasiya» | https://www.pexels.com/photo/18293122/ (совпало с фото Фаига photo1-for-card1) | Muneeb Babar (по адресу Pexels, muneeb-babar-1300535); Pexels License |
+| teaser-roof | тизер 2 «Servis sifarişi» (бывший тизер 1) | https://unsplash.com/photos/BU8lpW2Bn30 | ThisisEngineering; Unsplash License |
+| card-daikin | карточка «Kataloq» | https://www.pexels.com/photo/36901577/ | Peter Dyllong (по адресу Pexels); Pexels License; на фото мелкий знак Daikin (партнёр) |
+| card-shelves | карточка «Öz anbarımız» | https://www.pexels.com/photo/40265223/ (совпало с фото Фаига photo2-for-k9-5) | Serkan Dinc (по адресу Pexels); Pexels License |
+| portfolio/stadium-cop | объект 1 | https://commons.wikimedia.org/wiki/File:Бакинский_олимпийский_стадион_и_павильоны_COP_Сентябрь_2024.jpg | Press Service of the President of the Republic of Azerbaijan; CC BY 4.0 |
+| portfolio/aquatics-pool | объект 2 | https://commons.wikimedia.org/wiki/File:Baku_Aquatics_Centre_3.jpg | Presidential Press and Information Office; CC BY 4.0 |
+| portfolio/fuzuli-terminal | объект 4 | https://commons.wikimedia.org/wiki/File:Fuzuli_International_Airport,_Azerbaijan_5.jpg | Presidential Press and Information Office; CC BY 4.0 |
+
+Заменены и убраны из сайта: card-tower, card-units, teaser-units, portfolio/stadium, aquatics, fuzuli (остались в истории git). Тизер 3 (teaser-glass), объекты 3 и 5, склад — без замены.
